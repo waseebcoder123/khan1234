@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>porfolio</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="pro"><h1>Porfolio</h1></div>
+            <ul>
+                <li class="act"><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Me</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="berger" onclick="clike1()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+    <div class="home">
+    <div class="h-contant">
+<h3>Hello, It's Me</h3>
+<h1>Waseeb Khan </h1>
+<h3>I'm a    <span class="text"> Front End Developer</span></h3>
+<div class="pha">
+<p>Front-end web development is the development of the <br>  graphical user interface of a website, through  the use <br> of HTML, CSS, and JavaScript, so that   users can view <br> and interact with that website</p></div>
+<div class="s-m">
+    <a href="#"><i class='bx bxl-facebook'></i></a>
+    <a href="#"><i class='bx bxl-instagram'></i></a>
+    <a href="#"><i class='bx bxl-youtube' ></i></a>
+    <a href="#"><i class='bx bxl-twitter'></i></a>
+</div>
+<div class="btn">
+    <button>Download CV</button>
+</div>
+    </div>
+    <div class="h-img">
+        <img  src="img/khan.png" alt="">
+        
+    </div>
+</div>
+    
+
+
+
+<script>
+    let a=document.querySelector("ul");
+    function clike1(){
+        a.classList.toggle("reponsiv");
+    }
+
+    const changtext = document.querySelector(".text");
+    const textload1 = () => {
+        setTimeout(() => {
+            changtext.textContent = "Front End Developer" ;  
+        },0)   
+        setTimeout(() => {
+            changtext.textContent = "Freelancer" ;  
+        },4000)   
+        setTimeout(() => {
+            changtext.textContent = "Developer" ;  
+        },8000)   
+        setTimeout(() => {
+            changtext.textContent = "YouTuber" ;  
+        },12000)   
+    }
+    textload1();
+    setInterval( textload1 , 16000);
+</script>
+</body>
+</html>
